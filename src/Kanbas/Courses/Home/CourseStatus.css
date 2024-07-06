@@ -1,0 +1,17 @@
+#wd-course-status {
+    display: flex;
+    flex-direction: column;
+}
+
+#wd-course-status .inline-buttons {
+    display: flex;
+}
+
+#wd-course-status .inline-buttons button {
+    margin-right: 10px;
+}
+
+#wd-course-status button {
+    display: block;
+    margin-bottom: 10px;
+}

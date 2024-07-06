@@ -1,0 +1,65 @@
+#wd-assignments-editor {
+    font-family: Arial, sans-serif;
+}
+
+#wd-assignments-editor label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+#wd-assignments-editor input[type="text"],
+#wd-assignments-editor select,
+#wd-assignments-editor textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#wd-assignments-editor textarea {
+    height: 100px;
+}
+
+#wd-assignments-editor table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#wd-assignments-editor td {
+    padding: 5px;
+}
+
+#wd-assignments-editor fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#wd-assignments-editor legend {
+    font-weight: bold;
+}
+
+#wd-assignments-editor .checkbox-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#wd-assignments-editor .date-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+#wd-assignments-editor .date-fields input {
+    width: calc(50% - 5px);
+}
+
+#wd-assignments-editor .button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+#wd-assignments-editor .button-group button {
+    margin-left: 10px;
+}
