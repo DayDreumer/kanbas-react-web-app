@@ -14,6 +14,9 @@ export default function Labs() {
         <Route path="Lab2" element={<Lab2 />} />
         <Route path="Lab3" element={<Lab3 />} />
       </Routes>
+      <p>Full Name: Dongyin Guan</p>
+      <p>Section: Summer 2</p>
+      <a id="wd-github" href="https://github.com/DayDreumer/kanbas-react-web-app">GitHub Repository</a>
     </div>
   );
 }
