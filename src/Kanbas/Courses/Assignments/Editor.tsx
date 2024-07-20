@@ -1,36 +1,29 @@
 import React from 'react';
+import * as db from "../../Database";
+import { useParams } from "react-router-dom";
 import './AssignmentEditor.css';
 export default function AssignmentEditor() {
+    const {cid, aid} = useParams();
+    const assignment = db.assignments.find(a => a._id === aid)
+    if(!assignment) return <p>Assignment not found</p>;
     return (
       <div className="container mt-3">
-        
         <div className="mb-3">
           <label htmlFor="wd-name" className="form-label ">Assignment Name</label>
-          <input type="text" className="form-control" id="wd-name" placeholder="Enter assignment name" defaultValue="A1" />
+          <input type="text" className="form-control" id="wd-name" placeholder="Enter assignment name" defaultValue={assignment.title} />
         </div>
   
         <div className="mb-3">
           <label htmlFor="wd-description" className="form-label"></label>
-          <textarea className="form-control" id="wd-description" rows={10} defaultValue={`The assignment is available online
-  Submit a link to the landing page of your web application running on Netlify.
-    
-  The landing page should include the following:
-  - Your full name and section
-  - Links to each of the lab assignments
-  - Link to the Kanbas application
-  - Links to all relevant source code repositories
-  
-  The Kanbas application should include a link to navigate back to the landing page.`} />
-  
+          <textarea className="form-control" id="wd-description" rows={10} defaultValue={assignment.description} />
         </div>
-  
         
         <div className="mb-3 row align-items-start">
           <div className="col-3 text-end">
             <label htmlFor="wd-points" className="form-label pt-1">Points</label>
           </div>
           <div className="col">
-            <input type="text" className="form-control" id="wd-points" defaultValue="100" />
+            <input type="text" className="form-control" id="wd-points" defaultValue={assignment.points} />
           </div>
         </div>
         <div className="mb-3 row align-items-start">
@@ -126,11 +119,11 @@ export default function AssignmentEditor() {
             <div className='row mb-3'>
               <div className="col-md-6">
                 <label htmlFor="wd-available-from" className="form-label mb-0" ><strong>Available From</strong></label>
-                <input type="date" className="form-control" id="wd-available-from" defaultValue="2024-05-06" />
+                <input type="date" className="form-control" id="wd-available-from" defaultValue={assignment.availableDate} />
               </div>
               <div className="col-md-6">
                 <label htmlFor="wd-available-until" className="form-label mb-0" ><strong>Until</strong></label>
-                <input type="date" className="form-control" id="wd-available-until" />
+                <input type="date" className="form-control" id="wd-available-until" defaultValue={assignment.dueDate} />
               </div>
             </div>
           </div> 

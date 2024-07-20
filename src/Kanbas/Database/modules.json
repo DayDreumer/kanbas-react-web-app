@@ -1,0 +1,1226 @@
+[
+  {
+    "_id": "M101",
+    "name": "Introduction to Rocket Propulsion",
+    "description": "Basic principles of rocket propulsion and rocket engines.",
+    "course": "RS101",
+    "lessons": [
+      {
+        "_id": "L101",
+        "name": "History of Rocketry",
+        "description": "A brief history of rocketry and space exploration.",
+        "module": "M101"
+      },
+      {
+        "_id": "L102",
+        "name": "Rocket Propulsion Fundamentals",
+        "description": "Basic principles of rocket propulsion.",
+        "module": "M101"
+      },
+      {
+        "_id": "L103",
+        "name": "Rocket Engine Types",
+        "description": "Overview of different types of rocket engines.",
+        "module": "M101"
+      }
+    ]
+  },
+  {
+    "_id": "M102",
+    "name": "Fuel and Combustion",
+    "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+    "course": "RS101",
+    "lessons": [
+      {
+        "_id": "L201",
+        "name": "Rocket Fuel",
+        "description": "Overview of different types of rocket fuels.",
+        "module": "M102"
+      },
+      {
+        "_id": "L202",
+        "name": "Combustion Processes",
+        "description": "Understanding combustion processes and efficiency.",
+        "module": "M102"
+      },
+      {
+        "_id": "L203",
+        "name": "Combustion Instability",
+        "description": "Understanding combustion instability and mitigation.",
+        "module": "M102"
+      }
+    ]
+  },
+  {
+    "_id": "M103",
+    "name": "Nozzle Design",
+    "description": "Principles of rocket nozzle design and performance optimization.",
+    "course": "RS101",
+    "lessons": [
+      {
+        "_id": "L301",
+        "name": "Nozzle Design",
+        "description": "Overview of different types of rocket nozzles.",
+        "module": "M103"
+      },
+      {
+        "_id": "L302",
+        "name": "Nozzle Performance",
+        "description": "Understanding nozzle performance and efficiency.",
+        "module": "M103"
+      },
+      {
+        "_id": "L303",
+        "name": "Nozzle Optimization",
+        "description": "Optimizing nozzle design for specific applications.",
+        "module": "M103"
+      }
+    ]
+  },
+  {
+    "_id": "M201",
+    "name": "Fundamentals of Aerodynamics",
+    "description": "Basic aerodynamic concepts and fluid dynamics principles.",
+    "course": "RS102",
+    "lessons": [
+      {
+        "_id": "L401",
+        "name": "Introduction to Aerodynamics",
+        "description": "Basic principles of aerodynamics and its applications.",
+        "module": "M201"
+      },
+      {
+        "_id": "L402",
+        "name": "Fluid Dynamics",
+        "description": "Understanding the behavior of fluids in motion.",
+        "module": "M201"
+      },
+      {
+        "_id": "L403",
+        "name": "Airfoil Theory",
+        "description": "The theory behind the design and performance of airfoils.",
+        "module": "M201"
+      }
+    ]
+  },
+  {
+    "_id": "M202",
+    "name": "Subsonic and Supersonic Flow",
+    "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
+    "course": "RS102",
+    "lessons": [
+      {
+        "_id": "L404",
+        "name": "Subsonic Flow",
+        "description": "Characteristics and behavior of subsonic flow.",
+        "module": "M202"
+      },
+      {
+        "_id": "L405",
+        "name": "Supersonic Flow",
+        "description": "Characteristics and behavior of supersonic flow.",
+        "module": "M202"
+      },
+      {
+        "_id": "L406",
+        "name": "Shock Waves",
+        "description": "Formation and impact of shock waves in supersonic flow.",
+        "module": "M202"
+      }
+    ]
+  },
+  {
+    "_id": "M203",
+    "name": "Aerodynamic Heating",
+    "description": "Study of aerodynamic heating and thermal protection systems.",
+    "course": "RS102",
+    "lessons": [
+      {
+        "_id": "L407",
+        "name": "Heat Transfer",
+        "description": "Principles of heat transfer in aerodynamic contexts.",
+        "module": "M203"
+      },
+      {
+        "_id": "L408",
+        "name": "Thermal Protection Systems",
+        "description": "Design and application of thermal protection systems.",
+        "module": "M203"
+      },
+      {
+        "_id": "L409",
+        "name": "Aerothermal Analysis",
+        "description": "Analyzing aerodynamic heating effects on vehicles.",
+        "module": "M203"
+      }
+    ]
+  },
+  {
+    "_id": "M301",
+    "name": "Spacecraft Structural Design",
+    "description": "Fundamentals of designing spacecraft structures and materials selection.",
+    "course": "RS103",
+    "lessons": [
+      {
+        "_id": "L410",
+        "name": "Material Selection",
+        "description": "Criteria for selecting materials for spacecraft structures.",
+        "module": "M301"
+      },
+      {
+        "_id": "L411",
+        "name": "Structural Analysis",
+        "description": "Techniques for analyzing spacecraft structures.",
+        "module": "M301"
+      },
+      {
+        "_id": "L412",
+        "name": "Load Testing",
+        "description": "Methods for testing structural loads and stress.",
+        "module": "M301"
+      }
+    ]
+  },
+  {
+    "_id": "M302",
+    "name": "Orbital Mechanics",
+    "description": "Understanding orbital dynamics and mission planning.",
+    "course": "RS103",
+    "lessons": [
+      {
+        "_id": "L413",
+        "name": "Orbital Dynamics",
+        "description": "Basic principles of orbital motion and dynamics.",
+        "module": "M302"
+      },
+      {
+        "_id": "L414",
+        "name": "Mission Planning",
+        "description": "Strategies for planning and executing space missions.",
+        "module": "M302"
+      },
+      {
+        "_id": "L415",
+        "name": "Orbital Transfers",
+        "description": "Techniques for transferring between different orbits.",
+        "module": "M302"
+      }
+    ]
+  },
+  {
+    "_id": "M303",
+    "name": "Spacecraft Systems Engineering",
+    "description": "Overview of spacecraft systems and subsystems engineering.",
+    "course": "RS103",
+    "lessons": [
+      {
+        "_id": "L416",
+        "name": "Systems Integration",
+        "description": "Integrating various subsystems into a cohesive spacecraft.",
+        "module": "M303"
+      },
+      {
+        "_id": "L417",
+        "name": "Subsystem Design",
+        "description": "Design principles for spacecraft subsystems.",
+        "module": "M303"
+      },
+      {
+        "_id": "L418",
+        "name": "Testing and Validation",
+        "description": "Methods for testing and validating spacecraft systems.",
+        "module": "M303"
+      }
+    ]
+  },
+  {
+    "_id": "M1201",
+    "name": "Foundations of Organic Chemistry",
+    "description": "Covers the basic principles of organic chemistry including structure, properties, and synthesis of organic compounds.",
+    "course": "RS104",
+    "lessons": [
+      {
+        "_id": "L1201",
+        "name": "Carbon Structures and Hybridization",
+        "description": "Understand the nature of carbon bonding and the structural configurations it forms through hybridization."
+      },
+      {
+        "_id": "L1202",
+        "name": "Functional Groups and Reactivity",
+        "description": "Explore various functional groups in organic molecules and how they influence chemical reactivity."
+      }
+    ]
+  },
+  {
+    "_id": "M1202",
+    "name": "Organic Reaction Mechanisms",
+    "description": "In-depth analysis of various types of organic reactions and their mechanisms.",
+    "course": "RS104",
+    "lessons": [
+      {
+        "_id": "L1203",
+        "name": "Addition Reactions",
+        "description": "Delve into the mechanisms of addition reactions and their significance in organic synthesis."
+      },
+      {
+        "_id": "L1204",
+        "name": "Substitution and Elimination Reactions",
+        "description": "Examine substitution and elimination reactions to understand their role in forming complex organic molecules."
+      }
+    ]
+  },
+  {
+    "_id": "M1203",
+    "name": "Synthetic Strategies in Organic Chemistry",
+    "description": "This module focuses on the strategies used in the synthesis of complex organic molecules, including retrosynthesis and green chemistry.",
+    "course": "RS104",
+    "lessons": [
+      {
+        "_id": "L1205",
+        "name": "Retrosynthesis",
+        "description": "Learn techniques for planning organic synthesis through retrosynthetic analysis."
+      },
+      {
+        "_id": "L1206",
+        "name": "Green Chemistry in Synthesis",
+        "description": "Apply principles of green chemistry to minimize environmental impact in organic synthesis."
+      }
+    ]
+  },
+  {
+    "_id": "M401",
+    "name": "Theoretical Principles of Rocketry",
+    "description": "Covers advanced theoretical concepts including the mathematical and physical basis of rocket propulsion.",
+    "course": "RS105",
+    "lessons": [
+      {
+        "_id": "L501",
+        "name": "Rocket Dynamics",
+        "description": "Learn the fundamentals of rocket flight dynamics and motion principles."
+      },
+      {
+        "_id": "L502",
+        "name": "Thermodynamics in Rocketry",
+        "description": "Explore the thermodynamic principles critical to the functioning of rocket engines."
+      }
+    ]
+  },
+  {
+    "_id": "M402",
+    "name": "Practical Rocket Engineering",
+    "description": "Focuses on the practical application of engineering principles in the design and construction of rockets.",
+    "course": "RS105",
+    "lessons": [
+      {
+        "_id": "L503",
+        "name": "Rocket Engine Design",
+        "description": "Understand the key elements involved in designing efficient rocket engines."
+      },
+      {
+        "_id": "L504",
+        "name": "Material Science for Rockets",
+        "description": "Study the materials used in rocket construction with a focus on heat resistance and durability."
+      }
+    ]
+  },
+  {
+    "_id": "M403",
+    "name": "Safety Protocols in Rocketry",
+    "description": "An overview of safety measures and protocols necessary in rocket design and test flights.",
+    "course": "RS105",
+    "lessons": [
+      {
+        "_id": "L505",
+        "name": "Risk Management in Rocket Launches",
+        "description": "Learn strategies to mitigate risks during rocket launches."
+      },
+      {
+        "_id": "L506",
+        "name": "Emergency Response for Rocketry",
+        "description": "Prepare for and respond to emergencies in rocket testing and launching."
+      }
+    ]
+  },
+  {
+    "_id": "M501",
+    "name": "Quantum Mechanics for Chemists",
+    "description": "Exploring quantum mechanics in the context of physical chemistry, including wave functions, uncertainty, and particle physics as they relate to chemical structures.",
+    "course": "RS106",
+    "lessons": [
+      {
+        "_id": "L601",
+        "name": "Basics of Quantum Theory",
+        "description": "Gain an introduction to quantum theory with a focus on its applications in chemistry."
+      },
+      {
+        "_id": "L602",
+        "name": "Chemical Bonding and Quantum Mechanics",
+        "description": "Understand how quantum mechanics explains chemical bonding and molecular structures."
+      }
+    ]
+  },
+  {
+    "_id": "M502",
+    "name": "Chemical Kinetics",
+    "description": "Study of reaction rates, the Collision Theory, and the Transition State Theory to understand how chemical reactions occur.",
+    "course": "RS106",
+    "lessons": [
+      {
+        "_id": "L603",
+        "name": "Rate Laws and Reaction Mechanisms",
+        "description": "Learn the fundamentals of rate laws and how to deduce reaction mechanisms."
+      },
+      {
+        "_id": "L604",
+        "name": "Experimental Techniques in Kinetics",
+        "description": "Explore techniques and experiments for studying the kinetics of chemical reactions."
+      }
+    ]
+  },
+  {
+    "_id": "M503",
+    "name": "Thermodynamics in Chemistry",
+    "description": "Covers the laws of thermodynamics and their application to energy changes in chemical reactions.",
+    "course": "RS106",
+    "lessons": [
+      {
+        "_id": "L605",
+        "name": "First and Second Laws of Thermodynamics",
+        "description": "Explore the core laws of thermodynamics within chemical contexts."
+      },
+      {
+        "_id": "L606",
+        "name": "Applications of Thermodynamics",
+        "description": "Apply thermodynamics principles to solve chemical problems."
+      }
+    ]
+  },
+  {
+    "_id": "M601",
+    "name": "Sindarin and Quenya: An Introduction",
+    "description": "An introductory course on the most widely spoken Elvish languages in Middle-earth, focusing on their grammar, vocabulary, and usage.",
+    "course": "RS107",
+    "lessons": [
+      {
+        "_id": "L701",
+        "name": "Grammar and Syntax of Sindarin",
+        "description": "Learn the basic grammar and sentence structure of Sindarin."
+      },
+      {
+        "_id": "L702",
+        "name": "Quenya Vocabulary Building",
+        "description": "Expand your lexical range in Quenya through thematic vocabulary studies."
+      }
+    ]
+  },
+  {
+    "_id": "M602",
+    "name": "Dwarvish Language and Culture",
+    "description": "An in-depth study of Khuzdul, the secretive language of the Dwarves, along with insights into their cultural expressions.",
+    "course": "RS107",
+    "lessons": [
+      {
+        "_id": "L703",
+        "name": "Phonetics of Khuzdul",
+        "description": "Understand the unique phonetic system of the Dwarvish language."
+      },
+      {
+        "_id": "L704",
+        "name": "Cultural Aspects of Dwarvish Speech",
+        "description": "Learn how language influences and reflects Dwarvish culture and societal structures."
+      }
+    ]
+  },
+  {
+    "_id": "M603",
+    "name": "The Black Speech and Other Dark Tongues",
+    "description": "Study of Sauron's constructed language and other lesser-known languages used by dark forces.",
+    "course": "RS107",
+    "lessons": [
+      {
+        "_id": "L705",
+        "name": "Structure of the Black Speech",
+        "description": "Analyze the linguistic features of the Black Speech."
+      },
+      {
+        "_id": "L706",
+        "name": "Linguistic Influence of Dark Powers",
+        "description": "Explore how language is used as a tool of power and control by dark entities."
+      }
+    ]
+  },
+  {
+    "_id": "M701",
+    "name": "Diplomatic Strategies of Middle-earth",
+    "description": "Exploration of the diplomatic tactics used by various races in Middle-earth to forge alliances and manage conflicts.",
+    "course": "RS108",
+    "lessons": [
+      {
+        "_id": "L801",
+        "name": "Alliances between Elves and Men",
+        "description": "Study the historical alliances that shaped Middle-earth's political landscape."
+      },
+      {
+        "_id": "L802",
+        "name": "Dwarvish Negotiation Techniques",
+        "description": "Analyze the negotiation styles of the Dwarves and their impact on trade and warfare."
+      }
+    ]
+  },
+  {
+    "_id": "M702",
+    "name": "Leadership and Wisdom in Middle-earth",
+    "description": "A deep dive into the roles of leadership and wisdom among Middle-earth's wise and rulers.",
+    "course": "RS108",
+    "lessons": [
+      {
+        "_id": "L803",
+        "name": "The Wisdom of Gandalf",
+        "description": "Examine Gandalf's decisions and their implications for Middle-earth."
+      },
+      {
+        "_id": "L804",
+        "name": "Thrones of Middle-earth: Kings and Queens",
+        "description": "Study the governing styles of various monarchs in Middle-earth."
+      }
+    ]
+  },
+  {
+    "_id": "M703",
+    "name": "Conflict Resolution among Middle-earth Races",
+    "description": "Examine the methods used by different races in Middle-earth to resolve conflicts and maintain peace.",
+    "course": "RS108",
+    "lessons": [
+      {
+        "_id": "L805",
+        "name": "Elvish Diplomacy",
+        "description": "Explore the diplomatic strategies employed by Elves to manage conflicts."
+      },
+      {
+        "_id": "L806",
+        "name": "Human-Middle-earth Relations",
+        "description": "Study the relationships between various human kingdoms and their approaches to conflict resolution."
+      }
+    ]
+  },
+  {
+    "_id": "M704",
+    "name": "Fundamentals of Middle-earth Magic",
+    "description": "An introductory course on the various forms of magic present in Middle-earth, including its origins and practitioners.",
+    "course": "RS109",
+    "lessons": [
+      {
+        "_id": "L807",
+        "name": "Magical Artifacts",
+        "description": "Examine magical artifacts and their powers in detail."
+      },
+      {
+        "_id": "L808",
+        "name": "Elvish Magic and Lore",
+        "description": "Gain insights into Elvish magic practices and their philosophical foundations."
+      }
+    ]
+  },
+  {
+    "_id": "M705",
+    "name": "Dark Arts of Middle-earth",
+    "description": "Analysis of the dark arts, including necromancy and sorcery, practiced by the enemies of the free peoples.",
+    "course": "RS109",
+    "lessons": [
+      {
+        "_id": "L809",
+        "name": "Sauron and Necromancy",
+        "description": "Explore Sauron's use of necromancy to control spirits and reanimate the dead."
+      },
+      {
+        "_id": "L810",
+        "name": "Witchcraft and the Witch-king",
+        "description": "Study the Witch-king of Angmar's use of witchcraft in warfare."
+      }
+    ]
+  },
+  {
+    "_id": "M706",
+    "name": "Potions and Alchemy in Middle-earth",
+    "description": "Explore the art of potion-making and alchemical practices in Middle-earth, focusing on ingredients, recipes, and their effects.",
+    "course": "RS109",
+    "lessons": [
+      {
+        "_id": "L811",
+        "name": "Elvish Potions",
+        "description": "Learn about the potions crafted by Elves and their uses in healing and enchantment."
+      },
+      {
+        "_id": "L812",
+        "name": "Dwarvish Alchemy",
+        "description": "Study the alchemical practices of Dwarves, focusing on their unique methods and ingredients."
+      }
+    ]
+  },
+  {
+    "_id": "M707",
+    "name": "Philosophies of Democratic Education",
+    "description": "An overview of the philosophical foundations supporting democratic education.",
+    "course": "RS110",
+    "lessons": [
+      {
+        "_id": "L813",
+        "name": "Key Theorists of Democratic Education",
+        "description": "Study key philosophers and educators who have shaped the theory and practice of democratic education."
+      },
+      {
+        "_id": "L814",
+        "name": "Democratic Schools: Case Studies",
+        "description": "Examine case studies of schools that have successfully implemented democratic education principles."
+      }
+    ]
+  },
+  {
+    "_id": "M708",
+    "name": "Implementing Democratic Education",
+    "description": "Strategies and challenges in putting democratic education principles into practice in modern schools.",
+    "course": "RS110",
+    "lessons": [
+      {
+        "_id": "L815",
+        "name": "Curriculum Design for Democracy",
+        "description": "Learn how to design curricula that foster democratic values and student participation."
+      },
+      {
+        "_id": "L816",
+        "name": "Teacher Training for Democratic Education",
+        "description": "Explore methods for training teachers to effectively implement democratic education principles in the classroom."
+      }
+    ]
+  },
+  {
+    "_id": "M709",
+    "name": "Evaluating Democratic Education",
+    "description": "Methods and metrics for assessing the effectiveness of democratic education programs.",
+    "course": "RS110",
+    "lessons": [
+      {
+        "_id": "L817",
+        "name": "Assessment Techniques",
+        "description": "Study various techniques for assessing student learning and engagement in democratic education settings."
+      },
+      {
+        "_id": "L818",
+        "name": "Impact Analysis",
+        "description": "Analyze the broader impacts of democratic education on students, schools, and communities."
+      }
+    ]
+  },
+  {
+    "_id": "M801",
+    "name": "Origins of Independence Movements",
+    "description": "Exploration of the ideological and historical roots of various independence movements around the world.",
+    "course": "RS111",
+    "lessons": [
+      {
+        "_id": "L901",
+        "name": "Enlightenment Influences",
+        "description": "Discuss how Enlightenment ideas fueled independence movements."
+      },
+      {
+        "_id": "L902",
+        "name": "Case Study: American Revolution",
+        "description": "Take an in-depth look at the American Revolution as a model for subsequent independence movements."
+      }
+    ]
+  },
+  {
+    "_id": "M802",
+    "name": "Modern Struggles for Autonomy",
+    "description": "Analysis of contemporary movements seeking autonomy and independence.",
+    "course": "RS111",
+    "lessons": [
+      {
+        "_id": "L903",
+        "name": "Self-Determination in the 21st Century",
+        "description": "Explore the concept of self-determination in modern geopolitical contexts."
+      },
+      {
+        "_id": "L904",
+        "name": "Case Study: Catalan Independence",
+        "description": "Study the Catalan independence movement in Spain."
+      }
+    ]
+  },
+  {
+    "_id": "M803",
+    "name": "Post-Colonial Independence Movements",
+    "description": "Examine the movements for independence that arose in the aftermath of colonial rule.",
+    "course": "RS111",
+    "lessons": [
+      {
+        "_id": "L905",
+        "name": "African Independence Movements",
+        "description": "Explore the various independence movements across Africa and their impacts."
+      },
+      {
+        "_id": "L906",
+        "name": "Indian Independence",
+        "description": "Study the struggle for independence in India, focusing on key figures and events."
+      }
+    ]
+  },
+  {
+    "_id": "M804",
+    "name": "Educational Reforms of the 19th Century",
+    "description": "Study of key educational reforms and the figures behind them in the early 19th century.",
+    "course": "RS112",
+    "lessons": [
+      {
+        "_id": "L907",
+        "name": "Horace Mann and the Common School Movement",
+        "description": "Explore Horace Mann's contributions to public education in the United States."
+      },
+      {
+        "_id": "L908",
+        "name": "Development of Modern Schooling in Europe",
+        "description": "Analyze how European countries reformed their educational systems during this period."
+      }
+    ]
+  },
+  {
+    "_id": "M805",
+    "name": "Pioneers of Modern Education",
+    "description": "Examine the influential educators and their philosophies that shaped modern education.",
+    "course": "RS112",
+    "lessons": [
+      {
+        "_id": "L909",
+        "name": "Maria Montessori's Educational Approach",
+        "description": "Study Maria Montessori's contributions to child-centered education."
+      },
+      {
+        "_id": "L910",
+        "name": "John Dewey and Progressive Education",
+        "description": "Analyze John Dewey's philosophy and its impact on educational practices."
+      }
+    ]
+  },
+  {
+    "_id": "M806",
+    "name": "Comparative Educational Reforms",
+    "description": "Compare the educational reforms in different countries and their outcomes.",
+    "course": "RS112",
+    "lessons": [
+      {
+        "_id": "L911",
+        "name": "Reforms in Japanese Education",
+        "description": "Explore the changes in the Japanese educational system during the 19th century."
+      },
+      {
+        "_id": "L912",
+        "name": "Educational Developments in Russia",
+        "description": "Study the educational reforms in Russia and their impact on society."
+      }
+    ]
+  },
+  {
+    "_id": "M807",
+    "name": "Biblical Foundations of Ethics",
+    "description": "Examination of ethical principles as depicted in the Bible and their impact on Christian ethics.",
+    "course": "RS113",
+    "lessons": [
+      {
+        "_id": "L913",
+        "name": "Old Testament Ethics",
+        "description": "Study the ethical teachings in the Old Testament and their relevance to modern issues."
+      },
+      {
+        "_id": "L914",
+        "name": "New Testament and the Ethics of Jesus",
+        "description": "Analyze the ethical teachings of Jesus Christ and their application to Christian life."
+      }
+    ]
+  },
+  {
+    "_id": "M808",
+    "name": "Ethics in Christian Theology",
+    "description": "Exploration of ethical frameworks within Christian theology and their practical applications.",
+    "course": "RS113",
+    "lessons": [
+      {
+        "_id": "L915",
+        "name": "Augustine's Moral Philosophy",
+        "description": "Study the moral philosophy of Augustine and its influence on Christian ethics."
+      },
+      {
+        "_id": "L916",
+        "name": "Thomas Aquinas and Natural Law",
+        "description": "Analyze Thomas Aquinas' concept of natural law and its ethical implications."
+      }
+    ]
+  },
+  {
+    "_id": "M809",
+    "name": "Contemporary Christian Ethics",
+    "description": "Examine modern ethical issues through the lens of Christian ethical teachings.",
+    "course": "RS113",
+    "lessons": [
+      {
+        "_id": "L917",
+        "name": "Bioethics in Christian Perspective",
+        "description": "Explore the ethical challenges in modern medicine from a Christian viewpoint."
+      },
+      {
+        "_id": "L918",
+        "name": "Social Justice and Christian Ethics",
+        "description": "Study the role of Christian ethics in addressing social justice issues."
+      }
+    ]
+  },
+  {
+    "_id": "M901",
+    "name": "Life and Teachings of Jesus Christ",
+    "description": "In-depth study of Jesus' teachings, parables, and his impact on theology and society.",
+    "course": "RS114",
+    "lessons": [
+      {
+        "_id": "L1001",
+        "name": "The Parables of Jesus",
+        "description": "Analyze the parables and their meanings."
+      },
+      {
+        "_id": "L1002",
+        "name": "Sermon on the Mount",
+        "description": "Explore the teachings given on the mount and their ethical implications."
+      }
+    ]
+  },
+  {
+    "_id": "M902",
+    "name": "The Apostles and the Early Church",
+    "description": "Examines the role of the Apostles in the spread of Christianity and the formation of the early church.",
+    "course": "RS114",
+    "lessons": [
+      {
+        "_id": "L1003",
+        "name": "The Acts of the Apostles",
+        "description": "Study the actions and journeys of the apostles as documented in the New Testament."
+      },
+      {
+        "_id": "L1004",
+        "name": "Early Christian Communities",
+        "description": "Analyze the development and characteristics of early Christian communities."
+      }
+    ]
+  },
+  {
+    "_id": "M903",
+    "name": "Teachings of Paul",
+    "description": "Explore the theological and ethical teachings of Paul the Apostle and their impact on early Christianity.",
+    "course": "RS114",
+    "lessons": [
+      {
+        "_id": "L1005",
+        "name": "Paul's Letters",
+        "description": "Examine the letters of Paul and their significance in Christian theology."
+      },
+      {
+        "_id": "L1006",
+        "name": "Paul's Missionary Journeys",
+        "description": "Study the missionary journeys of Paul and their role in spreading Christianity."
+      }
+    ]
+  },
+  {
+    "_id": "M904",
+    "name": "Christian Martyrs",
+    "description": "Study the lives and sacrifices of early Christian martyrs and their influence on the growth of Christianity.",
+    "course": "RS114",
+    "lessons": [
+      {
+        "_id": "L1007",
+        "name": "Martyrdom in Early Christianity",
+        "description": "Analyze the concept of martyrdom and its impact on early Christian communities."
+      },
+      {
+        "_id": "L1008",
+        "name": "Notable Christian Martyrs",
+        "description": "Explore the stories of notable Christian martyrs and their legacy."
+      }
+    ]
+  },
+  {
+    "_id": "M905",
+    "name": "Models of Christian Leadership",
+    "description": "This module explores different leadership styles within the Christian context and their historical impacts.",
+    "course": "RS115",
+    "lessons": [
+      {
+        "_id": "L1009",
+        "name": "The Role of Bishops",
+        "description": "Explore the evolution of the episcopal office and its significance in church governance."
+      },
+      {
+        "_id": "L1010",
+        "name": "Servant Leadership",
+        "description": "Learn about servant leadership as practiced by Jesus and its relevance today."
+      }
+    ]
+  },
+  {
+    "_id": "M906",
+    "name": "Christian Leadership in History",
+    "description": "Examine the roles of significant Christian leaders throughout history and their contributions to the church and society.",
+    "course": "RS115",
+    "lessons": [
+      {
+        "_id": "L1011",
+        "name": "Leadership of the Church Fathers",
+        "description": "Study the leadership and theological contributions of the early Church Fathers."
+      },
+      {
+        "_id": "L1012",
+        "name": "Modern Christian Leaders",
+        "description": "Analyze the impact of modern Christian leaders on contemporary society and the church."
+      }
+    ]
+  },
+  {
+    "_id": "M907",
+    "name": "Christian Leadership Principles",
+    "description": "Explore the foundational principles of Christian leadership and their application in various contexts.",
+    "course": "RS115",
+    "lessons": [
+      {
+        "_id": "L1013",
+        "name": "Biblical Leadership Models",
+        "description": "Study leadership models presented in the Bible and their relevance today."
+      },
+      {
+        "_id": "L1014",
+        "name": "Ethical Leadership in Christianity",
+        "description": "Examine the ethical dimensions of Christian leadership."
+      }
+    ]
+  },
+  {
+    "_id": "M908",
+    "name": "Fundamentals of Sufism",
+    "description": "An introduction to the mystical aspects of Sufism, its beliefs, practices, and major figures.",
+    "course": "RS116",
+    "lessons": [
+      {
+        "_id": "L1015",
+        "name": "Key Sufi Figures",
+        "description": "Study the life and teachings of major Sufi saints like Rumi and Hafiz."
+      },
+      {
+        "_id": "L1016",
+        "name": "Sufi Practices and Rituals",
+        "description": "Gain insight into daily practices and rituals that define Sufi life."
+      }
+    ]
+  },
+  {
+    "_id": "M909",
+    "name": "Sufi Poetry and Literature",
+    "description": "Explore the rich tradition of Sufi poetry and literature and its impact on Islamic culture.",
+    "course": "RS116",
+    "lessons": [
+      {
+        "_id": "L1017",
+        "name": "Rumi's Poetry",
+        "description": "Study the poetry of Rumi and its spiritual and philosophical themes."
+      },
+      {
+        "_id": "L1018",
+        "name": "Sufi Literary Works",
+        "description": "Explore other significant literary works in the Sufi tradition."
+      }
+    ]
+  },
+  {
+    "_id": "M910",
+    "name": "Sufi Music and Dance",
+    "description": "Examine the role of music and dance in Sufi rituals and their significance in spiritual practice.",
+    "course": "RS116",
+    "lessons": [
+      {
+        "_id": "L1019",
+        "name": "The Whirling Dervishes",
+        "description": "Explore the practice and meaning of the whirling dance in Sufism."
+      },
+      {
+        "_id": "L1020",
+        "name": "Sufi Musical Traditions",
+        "description": "Study the various musical traditions within Sufism and their spiritual significance."
+      }
+    ]
+  },
+  {
+    "_id": "M911",
+    "name": "Islamic Ethics and Morality",
+    "description": "Exploration of ethical principles derived from the Quran and Hadith and their applications in modern contexts.",
+    "course": "RS117",
+    "lessons": [
+      {
+        "_id": "L1021",
+        "name": "Ethics of the Prophet",
+        "description": "Study the moral and ethical teachings of Prophet Muhammad."
+      },
+      {
+        "_id": "L1022",
+        "name": "Contemporary Islamic Ethics",
+        "description": "Discuss how Islamic ethical principles are applied in the contemporary world."
+      }
+    ]
+  },
+  {
+    "_id": "M912",
+    "name": "Principles of Islamic Jurisprudence",
+    "description": "Examine the ethical and moral foundations of Islamic law (Sharia) and its application in modern society.",
+    "course": "RS117",
+    "lessons": [
+      {
+        "_id": "L1023",
+        "name": "Foundations of Sharia",
+        "description": "Study the foundational principles of Islamic jurisprudence."
+      },
+      {
+        "_id": "L1024",
+        "name": "Ethics in Sharia Law",
+        "description": "Explore the ethical dimensions of Sharia and its role in guiding moral behavior."
+      }
+    ]
+  },
+  {
+    "_id": "M913",
+    "name": "Islamic Environmental Ethics",
+    "description": "Explore the ethical principles in Islam concerning environmental stewardship and sustainability.",
+    "course": "RS117",
+    "lessons": [
+      {
+        "_id": "L1025",
+        "name": "Quranic View on Nature",
+        "description": "Study the teachings of the Quran regarding nature and the environment."
+      },
+      {
+        "_id": "L1026",
+        "name": "Contemporary Environmental Issues in Islam",
+        "description": "Discuss how Islamic ethics address contemporary environmental challenges."
+      }
+    ]
+  },
+  {
+    "_id": "M914",
+    "name": "Concepts of the Unseen in Islam",
+    "description": "Detailed analysis of esoteric and mystical elements within Islam, focusing on angels, jinns, and other metaphysical beings.",
+    "course": "RS118",
+    "lessons": [
+      {
+        "_id": "L1027",
+        "name": "Angelic Beings",
+        "description": "Study the roles and types of angels in Islamic theology."
+      },
+      {
+        "_id": "L1028",
+        "name": "Jinn and Their Influence",
+        "description": "Explore the concept of jinn and their impact on human affairs."
+      }
+    ]
+  },
+  {
+    "_id": "M915",
+    "name": "Islamic Mysticism",
+    "description": "Examine the mystical dimensions of Islam, including Sufism and other esoteric traditions.",
+    "course": "RS118",
+    "lessons": [
+      {
+        "_id": "L1029",
+        "name": "Sufi Mystical Practices",
+        "description": "Study the mystical practices of Sufism and their spiritual significance."
+      },
+      {
+        "_id": "L1030",
+        "name": "Mysticism in the Quran",
+        "description": "Explore the mystical elements found in the Quran and their interpretations."
+      }
+    ]
+  },
+  {
+    "_id": "M916",
+    "name": "Islamic Eschatology",
+    "description": "Study the beliefs and doctrines concerning the end times and afterlife in Islam.",
+    "course": "RS118",
+    "lessons": [
+      {
+        "_id": "L1031",
+        "name": "Signs of the Last Day",
+        "description": "Examine the signs and events leading up to the Day of Judgment in Islamic eschatology."
+      },
+      {
+        "_id": "L1032",
+        "name": "Afterlife in Islam",
+        "description": "Explore the concepts of heaven, hell, and the afterlife in Islamic theology."
+      }
+    ]
+  },
+  {
+    "_id": "M917",
+    "name": "Hydraulic Engineering in Ancient China",
+    "description": "Examines ancient Chinese approaches to water management and their engineering innovations.",
+    "course": "RS119",
+    "lessons": [
+      {
+        "_id": "L1033",
+        "name": "Yu the Great and Flood Control",
+        "description": "Explore Yu the Great's techniques and their legacy in flood management."
+      },
+      {
+        "_id": "L1034",
+        "name": "Terrace Farming Innovations",
+        "description": "Study ancient terrace farming methods and their environmental impacts."
+      }
+    ]
+  },
+  {
+    "_id": "M918",
+    "name": "Water Management Techniques",
+    "description": "Study the various techniques and innovations in water management used in ancient China.",
+    "course": "RS119",
+    "lessons": [
+      {
+        "_id": "L1035",
+        "name": "Irrigation Systems",
+        "description": "Examine the development and use of irrigation systems in ancient China."
+      },
+      {
+        "_id": "L1036",
+        "name": "Reservoirs and Dams",
+        "description": "Explore the construction and impact of reservoirs and dams in Chinese history."
+      }
+    ]
+  },
+  {
+    "_id": "M919",
+    "name": "Ancient Chinese Agricultural Practices",
+    "description": "Explore the agricultural practices in ancient China and their role in supporting large populations.",
+    "course": "RS119",
+    "lessons": [
+      {
+        "_id": "L1037",
+        "name": "Crop Rotation and Fertilization",
+        "description": "Study the methods of crop rotation and fertilization used in ancient China."
+      },
+      {
+        "_id": "L1038",
+        "name": "Paddy Field Farming",
+        "description": "Examine the techniques of paddy field farming and their environmental impacts."
+      }
+    ]
+  },
+  {
+    "_id": "M920",
+    "name": "Mythological Figures of Leadership",
+    "description": "Examination of leadership traits exhibited by key figures in Chinese mythology.",
+    "course": "RS120",
+    "lessons": [
+      {
+        "_id": "L1039",
+        "name": "The Wisdom of the Yellow Emperor",
+        "description": "Study the Yellow Emperor's governance and philosophical contributions."
+      },
+      {
+        "_id": "L1040",
+        "name": "Leadership in the Journey to the West",
+        "description": "Analyze leadership and teamwork in the classic tale of the Monkey King."
+      }
+    ]
+  },
+  {
+    "_id": "M921",
+    "name": "Legendary Rulers of China",
+    "description": "Explore the leadership qualities and stories of legendary rulers in Chinese history.",
+    "course": "RS120",
+    "lessons": [
+      {
+        "_id": "L1041",
+        "name": "Emperor Yao and Shun",
+        "description": "Study the legends of Emperor Yao and Shun and their contributions to Chinese civilization."
+      },
+      {
+        "_id": "L1042",
+        "name": "The Great Yu",
+        "description": "Analyze the story of the Great Yu and his impact on flood control and governance."
+      }
+    ]
+  },
+  {
+    "_id": "M922",
+    "name": "Heroes of Chinese Folklore",
+        "description": "Examine the qualities and exploits of heroic figures in Chinese folklore.",
+    "course": "RS120",
+    "lessons": [
+      {
+        "_id": "L1043",
+        "name": "Mulan and Gender Roles",
+        "description": "Explore the story of Mulan and its significance in challenging traditional gender roles."
+      },
+      {
+        "_id": "L1044",
+        "name": "Guan Yu and Loyalty",
+        "description": "Study the legend of Guan Yu and the virtues of loyalty and righteousness."
+      }
+    ]
+  },
+  {
+    "_id": "M923",
+    "name": "Comparative Study of Ancient Hydraulic Works",
+    "description": "Cross-cultural examination of ancient water management systems, including Roman, Mesopotamian, and Egyptian examples.",
+    "course": "RS121",
+    "lessons": [
+      {
+        "_id": "L1045",
+        "name": "Roman Aqueducts and Their Engineering",
+        "description": "Gain insights into Roman aqueduct construction and its implications for urban planning."
+      },
+      {
+        "_id": "L1046",
+        "name": "Mesopotamian Irrigation Techniques",
+        "description": "Study irrigation systems and their role in Mesopotamian society."
+      }
+    ]
+  },
+  {
+    "_id": "M924",
+    "name": "Engineering Marvels of Ancient Civilizations",
+    "description": "Explore the engineering achievements of ancient civilizations and their impact on modern technology.",
+    "course": "RS121",
+    "lessons": [
+      {
+        "_id": "L1047",
+        "name": "Egyptian Pyramids",
+        "description": "Study the construction techniques and architectural significance of the Egyptian pyramids."
+      },
+      {
+        "_id": "L1048",
+        "name": "Persian Qanats",
+        "description": "Examine the development and function of Persian qanats in water management."
+      }
+    ]
+  },
+  {
+    "_id": "M925",
+    "name": "Ancient Irrigation Systems",
+    "description": "Analyze the various irrigation systems developed by ancient civilizations and their impacts on agriculture.",
+    "course": "RS121",
+    "lessons": [
+      {
+        "_id": "L1049",
+        "name": "Chinese Irrigation Canals",
+        "description": "Study the construction and use of irrigation canals in ancient China."
+      },
+      {
+        "_id": "L1050",
+        "name": "Indian Stepwells",
+        "description": "Examine the architectural and functional aspects of Indian stepwells in water management."
+      }
+    ]
+  }
+]
