@@ -45,8 +45,18 @@ export default function TOC() {
         </a>
       </li>
       <li className="nav-item">
-        <a id="wd-k" href="https://github.com/DayDreumer" className="nav-link">
-          My GitHub
+        <a id="wd-k" href="https://github.com/DayDreumer/kanbas-react-web-app" className="nav-link">
+          React Web App GitHub
+        </a>
+      </li>
+      <li className="nav-item">
+        <a id="wd-k" href="https://github.com/DayDreumer/kanbas-node-server-app" className="nav-link">
+          Node Server App GitHub
+        </a>
+      </li>
+      <li className="nav-item">
+        <a id="wd-k" href="https://kanbas-node-server-app-lmak.onrender.com" className="nav-link">
+          Kanbas Node Server App on Render
         </a>
       </li>
     </ul>
