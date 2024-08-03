@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import * as db from "../../Database";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { addAssignment, updateAssignment } from './reducer';
 import './AssignmentEditor.css';
+import * as client from "./client";
 
 interface Assignment {
   _id: string;
@@ -41,12 +41,21 @@ export default function AssignmentEditor() {
       }
     }, [aid, assignments]);
 
-    const handleSave = () => {
+    const handleSave = async() => {
       if (aid) {
-        console.log(aid)
-        dispatch(updateAssignment({ ...assignment, _id: aid }));
-      } else {
-        dispatch(addAssignment({ ...assignment, course: cid }));
+        try {
+          const updatedAssignment = await client.updateAssignment({ ...assignment, _id: aid });
+          dispatch(updateAssignment(updatedAssignment));
+        } catch (error) {
+          console.error('Failed to update assignment', error);
+        }
+      } else if (cid) {
+        try {
+          const newAssignment = await client.createAssignment(cid, assignment);
+          dispatch(addAssignment(newAssignment));
+        } catch (error) {
+          console.error('Failed to create assignment', error);
+        }
       }
       navigate(`/Kanbas/Courses/${cid}/Assignments`);
     };

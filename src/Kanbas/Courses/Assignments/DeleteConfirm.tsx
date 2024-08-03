@@ -5,13 +5,14 @@ import { deleteAssignment } from './reducer';
 interface DeleteConfirmProps {
   assignmentId: string;
   assignmentTitle: string;
+  onDelete: (assignmentId: string) => void;
 }
 
-export default function DeleteConfirm({ assignmentId, assignmentTitle }: DeleteConfirmProps) {
+export default function DeleteConfirm({ assignmentId, assignmentTitle, onDelete }: DeleteConfirmProps) {
   const dispatch = useDispatch();
 
   const handleDelete = () => {
-    dispatch(deleteAssignment(assignmentId));
+    onDelete(assignmentId);
   };
 
   return (

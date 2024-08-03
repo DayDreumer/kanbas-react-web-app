@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BsGripVertical } from "react-icons/bs";
 import ModulesControls from "./ModulesControls";
 import LessonControlButtons from './LessonControlButtons';
 import ModuleControlButtons from './ModuleControlButtons';
 import { useParams } from "react-router";
+import * as client from "./client";
 import * as db from "../../Database";
-import { addModule, editModule, updateModule, deleteModule }
+import { addModule, editModule, updateModule, deleteModule, setModules }
   from "./reducer";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -13,11 +14,31 @@ export default function Modules() {
       const { cid } = useParams();
       const [moduleName, setModuleName] = useState("");
       const { modules } = useSelector((state: any) => state.modulesReducer);
-    const dispatch = useDispatch();
+      const dispatch = useDispatch();
+      const removeModule = async (moduleId: string) => {
+        await client.deleteModule(moduleId);
+        dispatch(deleteModule(moduleId));
+      };
+      const createModule = async (module: any) => {
+        const newModule = await client.createModule(cid as string, module);
+        dispatch(addModule(newModule));
+      };
+      const fetchModules = async () => {
+        const modules = await client.findModulesForCourse(cid as string);
+        dispatch(setModules(modules));
+      };
+      useEffect(() => {
+        fetchModules();
+      }, []);
+      const saveModule = async (module: any) => {
+        const status = await client.updateModule(module);
+        dispatch(updateModule(module));
+      };
+    
       return (
         <div id="wd-modules">
          <ModulesControls setModuleName={setModuleName} moduleName={moduleName} addModule={() => {
-          dispatch(addModule({ name: moduleName, course: cid }));
+          createModule({name: moduleName, course: cid});
           setModuleName("");
         }}/><br /><br /><br /><br />
           <ul id="wd-modules" className="list-group rounded-0">
@@ -31,13 +52,11 @@ export default function Modules() {
                   { module.editing && (
                     <input className="form-control w-50 d-inline-block"
                           onChange={(e) => 
-                            dispatch(
-                              updateModule({ ...module, name: e.target.value })
-                            )
+                            saveModule({...module, name: e.target.value})
                           }
                           onKeyDown={(e) => {
                             if (e.key === "Enter") {
-                              dispatch(updateModule({ ...module, editing: false }));
+                              saveModule(updateModule({ ...module, editing: false }));
                             }
                           }}
                           value={module.name}/>
@@ -45,15 +64,15 @@ export default function Modules() {
                   <ModuleControlButtons 
                     moduleId={module._id}
                     deleteModule={(moduleId) => {
-                      dispatch(deleteModule(moduleId));
+                      removeModule(moduleId);
                     }}
                     editModule={(moduleId) => dispatch(editModule(moduleId))}
                   />
                 </div>
                 {module.lessons && (
-                  <ul className="wd-lessons list-group rounded-0">
+                  <ul className="wd-lessons list-group rounded-0" style={{ borderLeft: '4px solid green' }}>
                     {module.lessons.map((lesson: any) => (
-                      <li className="wd-lesson list-group-item p-3 ps-1">
+                      <li key={lesson._id} className="wd-lesson list-group-item p-3 ps-1">
                         <BsGripVertical className="me-2 fs-3" />
                         {lesson.name}
                         <LessonControlButtons />

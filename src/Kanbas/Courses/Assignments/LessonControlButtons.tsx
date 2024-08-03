@@ -6,14 +6,18 @@ import DeleteConfirm from './DeleteConfirm';
 interface LessonControlButtonsProps {
   assignmentTitle: string;
   assignmentId: string;
+  onDelete: (assignmentId: string) => void;
 }
 
 export default function LessonControlButtons({
   assignmentTitle,
   assignmentId,
+  onDelete
 }: LessonControlButtonsProps) {
+  const handleDelete = () => {
+    onDelete(assignmentId);
+  };
 
-  
   return (
     <div className="float-end">
       <FaTrash
@@ -21,7 +25,7 @@ export default function LessonControlButtons({
         data-bs-toggle="modal"
         data-bs-target={`#delete-modal-${assignmentId}`}
       />
-      <DeleteConfirm assignmentId={assignmentId} assignmentTitle={assignmentTitle} />
+      <DeleteConfirm assignmentId={assignmentId} assignmentTitle={assignmentTitle} onDelete={handleDelete} />
       <GreenCheckmark />
       <IoEllipsisVertical className="fs-4" />
       

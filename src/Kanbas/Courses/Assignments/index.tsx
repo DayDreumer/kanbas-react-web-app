@@ -4,10 +4,11 @@ import { BsGripVertical } from "react-icons/bs";
 import AssignmentsControls from "./AssignmentsControls";
 import AssignmentHeader from "./AssignmentHeader";
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import * as db from "../../Database";
+
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteAssignment } from "./reducer";
-import LessonControlButtons from "./LessonControlButtons";  
+import { deleteAssignment, setAssignments } from "./reducer";
+import LessonControlButtons from "./LessonControlButtons";
+import * as client from "./client";
  
 interface Assignment {
   _id: string;
@@ -22,10 +23,22 @@ interface Assignment {
 }
 
 export default function Assignments() {
-  const { cid } = useParams(); 
+  const { cid } = useParams<{ cid: string }>(); 
   const assignments = useSelector((state: any) => state.assignments.assignments);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchAssignments = async () => {
+      try {
+        const data = await client.findAssignmentsForCourse(cid!);
+        dispatch(setAssignments(data));
+      } catch (error) {
+        console.error('Failed to fetch assignments', error);
+      }
+    };
+    fetchAssignments();
+  }, [dispatch, cid]);
 
   const courseAssignments = assignments.filter((assignment: Assignment) => assignment.course === cid);
   
@@ -36,6 +49,14 @@ export default function Assignments() {
   const handleAddAssignment = () => {
     navigate(`/Kanbas/Courses/${cid}/AssignmentEditor`);
   };
+  const handleDeleteAssignment = async (assignmentId: string) => {
+    try {
+      await client.deleteAssignment(assignmentId);
+      dispatch(deleteAssignment(assignmentId));
+    } catch (error) {
+      console.error('Failed to delete assignment', error);
+    }
+  };
 
   return (
     <div id="wd-assignments" className="container mt-4">
@@ -43,7 +64,7 @@ export default function Assignments() {
       <AssignmentHeader />
       <ul id="wd-assignment-list" className="list-group rounded-0" style={{ borderLeft: '4px solid green' }}>
         {courseAssignments.map((assignment : Assignment) => (
-            <li className="wd-assignment-list-item list-group-item d-flex justify-content-between p-0 fs-5 border-gray">
+            <li key={assignment._id} className="wd-assignment-list-item list-group-item d-flex justify-content-between p-0 fs-5 border-gray">
             <div className="col-1 d-flex align-items-center justify-content-start">
               <Link className="wd-assignment-link d-flex align-items-center p-2" to={`${assignment._id}`}>
                 <BsGripVertical className="me-2 fs-3 " style={{ color: 'black' }}/>
@@ -58,7 +79,7 @@ export default function Assignments() {
               </div>
             </div>
             <div className="col-3 d-flex align-items-center justify-content-end p-3">
-              <LessonControlButtons assignmentTitle={assignment.title} assignmentId={assignment._id} />
+              <LessonControlButtons assignmentTitle={assignment.title} assignmentId={assignment._id} onDelete={handleDeleteAssignment} />
             </div>
           </li>
         ))}
